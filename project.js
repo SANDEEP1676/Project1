@@ -1,6 +1,6 @@
-let btn = document.querrySelector('#new-quote'); 
-let person1 = document.querrySelector('.person');
-let quote1 = document.querrySelector('.quotes');
+let btn = document.querySelector('#new-quote'); 
+let person1 = document.querySelector('.person');
+let quote1 = document.querySelector('.quotes');
 
 const quotes = [{
    quote:`"In the game of cricket, a hero is a person who respects the game and does not corrupt the game. The one who doesn't or corrupts the game, they are the villain. They should be punished, and they have been punished in the past."`
@@ -22,6 +22,6 @@ const quotes = [{
 
 btn.addEventListener('click',function(){
     let random = Math.floor(Math.random() * quotes.length);
-    quote1.innerText = quotes[3].quote;
-    person1.innerText = quotes[3].person;
-})
+    quote1.innerText = quotes[random].quote;
+    person1.innerText = quotes[random].person;
+});
